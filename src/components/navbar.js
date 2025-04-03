@@ -2,9 +2,9 @@ import React from 'react';
 
 function Navbar(props) {
     return (
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode1} bg-${props.mode1}`} style={{border : "1px solid black"}}>
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode1} bg-${props.mode1}`}>
             <div className="container-fluid">
-                <a className="navbar-brand" href="/" style={{color : "black"}}>{props.title}</a>
+                <a className="navbar-brand" href="/" style={{color : 'black'}}>{props.title}</a>
                 <button 
                     className="navbar-toggler" 
                     type="button" 
@@ -18,10 +18,10 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/"  style={{color : "black"}}>Home</a>
+                            <a className="nav-link active" aria-current="page" href="/" style={{color : "black"}}>Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/"  style={{color : "black"}}>{props.About}</a>
+                            <a className="nav-link" href="/" style={{color : "black"}}>{props.About}</a>
                         </li>
                     </ul>
                     <form className="d-flex" id="">

@@ -21,7 +21,7 @@ export default function Textformuppercase(props) {
     props.showAlert02("Success => 2", "Your textarea is success fully cleared");
   }
   return (
-    <div className='container' style={{color : props.mode1 === "dark" ? "white" : "black"}}>
+    <div className='container' style={{color : props.mode1 === "dark" ? "black" : "white"}}>
       <h1>{props.heading}</h1>
       <textarea 
       style={{

@@ -30,7 +30,7 @@ export default function App() {
     setTimeout(() => {
       setAlert(null);
     },2000);
-  }  
+  }
   const removeBodyColor = () => {
     document.body.classList.remove("bg-primary");
     document.body.classList.remove("bg-danger");
