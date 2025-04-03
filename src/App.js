@@ -42,16 +42,21 @@ export default function App() {
   const toggler = (color) => {
     removeBodyColor();
     document.body.classList.add("bg-"+color);
-    if (mode === "light") {
-      setMode("dark");
-      document.body.style.backgroundColor ="#042743"; 
-      showAlert("success", "enable darkmode successfully");
-      showBhavyAlert("Success => 2", "Disable light mode successfully");
-    } else {
-      setMode("light");
-        document.body.style.backgroundColor = "white";
-      showAlert("success", "enabe lightmode successfully");
-      showBhavyAlert("Success => 2", "Disable dark mode successfully");
+    // if (mode === "light") {
+    //   setMode("dark");
+    //   document.body.style.backgroundColor ="#042743";
+    //   showAlert("success", "enable darkmode successfully");
+    //   showBhavyAlert("Success => 2", "Disable light mode successfully");
+    // } else {
+    //   setMode("light");
+    //   document.body.style.backgroundColor = "white";
+    //   showAlert("success", "enabe lightmode successfully");
+    //   showBhavyAlert("Success => 2", "Disable dark mode successfully");
+    // }
+    if(color === "#042743"){
+       setMode(
+        document.body.style.backgroundColor = "#042743"
+       )
     }
   }
 
