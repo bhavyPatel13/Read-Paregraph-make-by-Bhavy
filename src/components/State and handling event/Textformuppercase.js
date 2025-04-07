@@ -22,7 +22,7 @@ export default function Textformuppercase(props) {
   }
   return (
     <div className='container' style={{color : props.mode1 === "dark" ? "black" : "white"}}>
-      <h1>{props.heading}</h1>
+      <h1 style={{color : props.mode1 === "#042743" ? "white" : "black"}}>{props.heading}</h1>
       <textarea 
       style={{
         backgroundColor : props.mode1 === "dark" ? "gray" : "white",

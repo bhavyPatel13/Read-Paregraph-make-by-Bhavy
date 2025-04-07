@@ -18,7 +18,9 @@ export default function Textformlowwercase(props) {
   return (
     <>
       <div className="container" style={{color : props.mode1 === "light" ? "black" : "white"}}>
-        <h1>{props.heading}</h1>
+        <h1 style={{
+          color : props.mode1 === "light" ? "black" : "white",
+        }}>{props.heading}</h1>
         <div className="mb-3">
           <textarea
             style={{
