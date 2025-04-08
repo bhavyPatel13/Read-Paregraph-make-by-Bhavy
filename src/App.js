@@ -42,6 +42,7 @@ export default function App() {
   const toggler = (color) => {
     removeBodyColor();
     document.body.classList.add("bg-"+color);
+    setMode(color);
     // if (mode === "light") {
     //   setMode("dark");
     //   document.body.style.backgroundColor ="#042743";
@@ -57,6 +58,9 @@ export default function App() {
        setMode(
         document.body.style.backgroundColor = "#042743"
        )
+    }
+    if(color === "light"){
+      document.body.style.color = "black"
     }
   }
 

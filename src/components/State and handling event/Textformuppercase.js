@@ -26,7 +26,7 @@ export default function Textformuppercase(props) {
       <textarea 
       style={{
         backgroundColor : props.mode1 === "dark" ? "gray" : "white",
-        color : props.mode1 === "dark" ? "white" : "black"
+        color : props.mode1 === "dark" ? "white" : "black",
       }}
         className="form-control mb-3" 
         id="myBox" 

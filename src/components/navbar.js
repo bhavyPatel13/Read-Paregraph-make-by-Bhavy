@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar(props) {
     return (
-        <nav className={`navbar navbar-expand-lg navbar-${props.mode1} bg-${props.mode1}`}>
+        <nav className={`navbar navbar-expand-lg navbar-${props.mode1} bg-${props.mode1}`} style={{borderBottom : "3px solid black"}}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="/" style={{color : props.mode1 === "#042743" ? "white" : "black"}}>{props.title}</a>
                 <button 
@@ -57,7 +57,7 @@ function Navbar(props) {
                         <div 
                             className="bg-light rounded mx-2 my-2"
                             onClick={() => {props.toggle("light")}}
-                            style={{height : "30px", width : "30px", border : "3px solid black"}}></div>
+                            style={{height : "30px", width : "30px", border : "3px solid black", color : "black"}}></div>
                         <div 
                             className="rounded mx-2 my-2"
                             onClick={() => {props.toggle("#042743")}}
